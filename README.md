@@ -41,3 +41,18 @@ docker rm -f $(docker ps -aq)
 Eliminar todos los contenedores
 ```
 
+
+
+```sh 
+$ docker images ls 
+Lista todas las imagenes 
+```
+
+
+```sh 
+docker pull <image_name>:<tag_version>
+Descargar desde dockerhub 
+```
+
+
+
