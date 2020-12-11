@@ -36,3 +36,8 @@ $ docker exec  <container_id or container_name> bash
 Ingresar a consola en modo interactivo y ejecutar un comando bash 
 ```
 
+```sh 
+docker rm -f $(docker ps -aq)
+Eliminar todos los contenedores
+```
+

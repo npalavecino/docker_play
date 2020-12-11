@@ -1,0 +1,38 @@
+Insertar y extraer archivos de un contenedor 
+
+
+Práctica realizada:
+
+1.- Para crear un archivo en mi máquina:
+```sh
+touch prueba.txt
+```
+2.- Crear un contenedor llamado copytest, que corra ubuntu e iniciar un proceso que se mantenga activo:
+```sh
+docker run -d --name copytest ubuntu tail -f /dev/null
+```
+
+3.- Iniciar una conexión de terminal con el contenedor que está corriendo ubuntu
+```sh
+docker exec -it copytest bash
+```
+
+4.- Creamos un directorio llamado testing en el contenedor de ubuntu
+```sh
+mkdir testing
+```
+
+5.- Comando docker para copiar un fichero o un directorio desde la máquina anfitrión hacia el contenedor, copytest es el nombre del contenedor hacia el cual queremos copiar el archivo
+
+```sh
+docker cp prueba.txt copytest:/testing/test.txt
+```
+
+6.- Comando para ejecutar la acción inversa, es decir, copiar fichero o directorio desde el contenedor hacia la máquina anfitrión.
+donde localtesting será el nombre de un nuevo directorio que se creará en la máquina anfitrión dentro del directorio en el que nos encontremos al momento de haber ejecutado el siguiente comando:
+
+```sh
+docker cp copytest:/testing localtesting 
+```
+
+Nota: utilizando docker cp, no es necesario que el contenedor esté corriendo
