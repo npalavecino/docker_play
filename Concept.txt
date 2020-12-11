@@ -1,0 +1,10 @@
+Conceptos fundamentales de Docker: 
+
+Contenedores 
+
+1.- Agrupación de proceso // ejecuta procesos de forma nativa
+2.- Es una entidad logica, no tien limite estricto de las maquinas virtuales, emulación  del SO simulado por otra mas abajo.
+3.- Los procesos se ejecutan dentro del contenedor ven su universo como el contenedor lo define, no pueden ver mas alla del contenedor, a pesar de estar corriendo en una maquinas mas grande. Ejemplo: Pelicula-  truman show
+4.- Es diferente a una maquina virtual
+
+
