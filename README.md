@@ -31,3 +31,8 @@ $ docker rename <actual-name>
 $ docker inspect <container_id or container_name>
 ```
 
+```sh 
+$ docker exec  <container_id or container_name> bash  
+Ingresar a consola en modo interactivo y ejecutar un comando bash 
+```
+
