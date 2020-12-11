@@ -8,3 +8,21 @@ Contenedores
 4.- Es diferente a una maquina virtual
 
 
+Ciclo de vida de un contenedor 
+
+
+Cada vez que un contendor se ejecuta, en realidad lo que ejecuta es un proceso del sistema operativo. Este proceso se le conoce como Main process.
+
+
+#Main process
+Determina la vida del contenedor, un contendor corre siempre y cuando su proceso principal este corriendo.
+
+#Sub process
+Un contenedor puede tener o lanzar procesos alternos al main process, si estos fallan el contenedor va a seguir encedido a menos que falle el main.
+
+Batch como Main process
+Agujero negro (/dev/null) como Main process
+
+
+
+
