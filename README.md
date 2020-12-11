@@ -50,7 +50,7 @@ Lista todas las imagenes
 
 
 ```sh 
-docker pull <image_name>:<tag_version>
+$ docker pull <image_name>:<tag_version>
 Descargar desde dockerhub 
 ```
 
