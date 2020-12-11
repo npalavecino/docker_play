@@ -1,2 +1,5 @@
-# docker_play
-Docker_play 
+# Repositorio de estudio docker
+# Se cargaran varios archivos para registar avance y pruebas
+
+
+
