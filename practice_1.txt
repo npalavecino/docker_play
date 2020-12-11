@@ -1,0 +1,28 @@
+EXPONIENDO CONTENDOR 
+
+Se connfigura puerto de contenedor para tener salida por puertos de estación local.
+
+Se realiza el ejemplo utilizando nginx . 
+
+Comandos:
+
+
+1.- Crea un contenedor nginx con nombre  proxy 
+$ docker run -d --name proxy nginx (corro un nginx)
+
+2.- Observar el estado de los contendores y se aprecia que no levanta nginx debido a que puerto no esta expuesto. 
+Es necesario para y eliminar contenedor para volver a levantar con configuración de puerto.
+$ docker stop proxy (apaga el contenedor)
+$ docker rm proxy (borro el contenedor)
+$ docker rm -f <contenedor> (lo para y lo borra)
+
+3.- Se levanta contendor proxy - validar contendor en navegador local
+http://localhost:8080
+
+$ docker run -d --name proxy -p 8080:80 nginx (corro un nginx y expongo el puerto 80 del contenedor en el puerto 8080 de mi máquina)
+
+4.- Observar logs contenedor
+ 
+$ docker logs proxy (veo los logs)
+$ docker logs -f proxy (hago un follow del log)
+$ docker logs --tail 10 -f proxy (veo y sigo solo las 10 últimas entradas del log)
