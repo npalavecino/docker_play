@@ -1,4 +1,9 @@
 # Repositorio de estudio docker
+Se recomienda revisar repositorio de plazti
+$ git clone https://github.com/platzi/docker
+
+
+
 Comando Basicos Docker 
 
 
