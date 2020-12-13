@@ -60,4 +60,19 @@ Descargar desde dockerhub
 ```
 
 
+Adminitración de ambiente Docker 
+ - Comandos de Mantenimiento Docker 
+
+# Remove ALL
+
+```sh 
+$ docker rm -vf $(sudo docker ps -a -q)
+$ docker rmi -f $(sudo docker images -a -q)
+$ docker system prune -f
+$ docker volume prune -f
+```
+# Remove Volumes and images 
+```sh 
+docker-compose -f production.yml down --volumes --rmi all
+```
 
