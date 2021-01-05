@@ -8,6 +8,13 @@ Contenedores
 4.- Es diferente a una maquina virtual
 
 
+Docker breve explicación --> Contenedor que empaqueta de forma ligera todo lo necesario para que uno o mas procesos funcionen: codigo, herramientas del sistema, biblioteca del sistema, dependencias.
+
+Esto garantiza que siempre se podra ejecutar, independientemente del entorno en el queramos desplegarlo.
+
+Iniciado por Salomón hykes dentro de una empresa llamada dotcloud. 
+
+
 Ciclo de vida de un contenedor 
 
 
