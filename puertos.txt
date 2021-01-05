@@ -1,0 +1,9 @@
+Conceptos relacionados con puertos. 
+
+
+NOTA: 
+Por defecto los puertos de un contenedor son privados y no pueden ser accededidos- 
+Debemos hacerlos publicos y mapearlos con un puerto del host. 
+
+
+

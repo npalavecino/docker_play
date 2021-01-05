@@ -1,0 +1,13 @@
+Practica Docker 
+
+1.- Enlazar puertos Docker 
+
+Comprobar las redes 
+
+´´´sh
+docker network ls 
+
+´´´
+
+
+
